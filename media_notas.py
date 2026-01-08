@@ -12,7 +12,6 @@ print(f'As notas enviadas sao {notas}')
 
 #soma dos valores na lista // media
 soma_notas = sum(notas)
-media = soma / qtd_notas
+media = soma_notas / qtd_notas
 
 print(f'A media eh {media:.1f}')
-
