@@ -1,7 +1,7 @@
 print('** FATORIAL **')
 
 def fatorial(numero):
-    if numero == 0 or numero == 1:
+    if numero == 0 or numero == 1: #caso base
         print(f'Resultado fatorial parcial {numero} = 1')
         return 1
     else:
