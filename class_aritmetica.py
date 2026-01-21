@@ -15,13 +15,29 @@ def pedir_entrada():
 
 class Calculadora:
     def __init__(self, operador1, operador2):
-        self.operador1 = operador1
-        self.operador2 = operador2
+        self._operador1 = operador1
+        self._operador2 = operador2
 
     def soma(self):
-        return self.operador1 + self.operador2
+        return self._operador1 + self._operador2
     def subtracao(self):
-        return self.operador1 - self.operador2
+        return self._operador1 - self._operador2
+
+    @property
+    def operador1(self):
+        return self._operador1
+
+    @property
+    def operador2(self):
+        return self._operador2
+
+    @operador1.setter
+    def operador1(self, operador):
+        self._operador1 = operador
+
+    @operador2.setter
+    def operador2(self, operador):
+        self._operador2 = operador
 
 if __name__ == '__main__':
     while True:
